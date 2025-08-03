@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: chat-frontend
+    env: node
+    buildCommand: npm install
+    startCommand: node node.js
+    plan: free
+    envVars:
+      - key: NODE_VERSION
+        value: 18  # Adjust if needed
+      - key: PORT
+        value: 3000  # Match the port in node.js
